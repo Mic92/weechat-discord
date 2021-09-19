@@ -2062,7 +2062,7 @@ dependencies = [
 [[package]]
 name = "weechat"
 version = "0.1.0"
-source = "git+https://github.com/terminal-discord/rust-weechat?rev=d0365fc#d0365fc26847b6c5dd4cde29a5b966d3141548d1"
+source = "git+https://github.com/terminal-discord/rust-weechat?rev=2d0bc1f#2d0bc1f646ee7f208b3b42557257a5d9c283fc83"
 dependencies = [
  "chrono",
  "libc",
@@ -2092,7 +2092,7 @@ dependencies = [
 [[package]]
 name = "weechat-macro"
 version = "0.1.0"
-source = "git+https://github.com/terminal-discord/rust-weechat?rev=d0365fc#d0365fc26847b6c5dd4cde29a5b966d3141548d1"
+source = "git+https://github.com/terminal-discord/rust-weechat?rev=2d0bc1f#2d0bc1f646ee7f208b3b42557257a5d9c283fc83"
 dependencies = [
  "libc",
  "proc-macro2",
@@ -2103,7 +2103,7 @@ dependencies = [
 [[package]]
 name = "weechat-sys"
 version = "0.1.0"
-source = "git+https://github.com/terminal-discord/rust-weechat?rev=d0365fc#d0365fc26847b6c5dd4cde29a5b966d3141548d1"
+source = "git+https://github.com/terminal-discord/rust-weechat?rev=2d0bc1f#2d0bc1f646ee7f208b3b42557257a5d9c283fc83"
 dependencies = [
  "bindgen",
  "libc",
