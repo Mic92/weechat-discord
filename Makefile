@@ -11,7 +11,7 @@ all_debug: src/*
 .ONESHELL:
 install: all
 	if [[ ! -z $${WEECHAT_HOME} ]]; then
-	  installdir=$${WEECHAT_HOME}/.weechat/plugins
+	  installdir=$${WEECHAT_HOME}/plugins
 	elif [[ ! -z $${XDG_DATA_HOME} ]]; then
 	  installdir=$${XDG_DATA_HOME}/weechat/plugins
 	else
