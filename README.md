@@ -113,11 +113,11 @@ If you want a more irc-style interface, you can enable irc-mode:
 In irc-mode, weecord will not automatically "join" every Discord channel.  You must join a channel using the
 `/discord join <guild-name> [<channel-name>]` command.
 
-Watched channels:
+Watched channels:  
 You can use `/discord watch <guild-name> [<channel-name>]` to start watching a channel or entire guild.
 This means that if a message is received in a watched channel, that channel will be joined and added to the nicklist.
 
-Autojoin channels:
+Autojoin channels:  
 You can use `/discord autojoin <guild-name> [<channel-name>]` to start watching a channel or entire guild.
 Any channel or guild marked as autojoin will be automatically joined when weecord connects.
 
