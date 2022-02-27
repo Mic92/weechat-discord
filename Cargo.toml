@@ -32,6 +32,9 @@ optional = true
 rev = "046a171"
 git = "https://github.com/terminal-discord/parking_lot"
 
+[patch.crates-io]
+parking_lot = { rev = "046a171", git = "https://github.com/terminal-discord/parking_lot"}
+
 [dependencies.serenity]
 git = "https://github.com/terminal-discord/serenity"
 rev = "1cc746dd"

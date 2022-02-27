@@ -784,15 +784,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "lock_api"
-version = "0.3.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c4da24a77a3d8a6d4862d95f72e6fdb9c09a643ecdb402d754004a557f2bec75"
-dependencies = [
- "scopeguard",
-]
-
-[[package]]
 name = "log"
 version = "0.4.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -978,37 +969,11 @@ checksum = "2839e79665f131bdb5782e51f2c6c9599c133c6098982a54c794358bf432529c"
 [[package]]
 name = "parking_lot"
 version = "0.9.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f842b1982eb6c2fe34036a4fbfb06dd185a3f5c8edfaacdf7d1ea10b07de6252"
-dependencies = [
- "lock_api 0.3.4",
- "parking_lot_core 0.6.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "rustc_version",
-]
-
-[[package]]
-name = "parking_lot"
-version = "0.9.0"
 source = "git+https://github.com/terminal-discord/parking_lot?rev=046a171#046a17142065ea47e2ae8073ba1fd55a4ce9efdd"
 dependencies = [
  "autocfg 0.1.7",
- "lock_api 0.3.1",
- "parking_lot_core 0.6.2 (git+https://github.com/terminal-discord/parking_lot?rev=046a171)",
-]
-
-[[package]]
-name = "parking_lot_core"
-version = "0.6.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b876b1b9e7ac6e1a74a6da34d25c42e17e8862aa409cbbbdcfc8d86c6f3bc62b"
-dependencies = [
- "cfg-if 0.1.10",
- "cloudabi",
- "libc",
- "redox_syscall",
- "rustc_version",
- "smallvec 0.6.13",
- "winapi 0.3.9",
+ "lock_api",
+ "parking_lot_core",
 ]
 
 [[package]]
@@ -1021,7 +986,7 @@ dependencies = [
  "cloudabi",
  "libc",
  "redox_syscall",
- "smallvec 1.5.0",
+ "smallvec",
  "winapi 0.3.9",
 ]
 
@@ -1495,7 +1460,7 @@ dependencies = [
  "chrono",
  "flate2",
  "log",
- "parking_lot 0.9.0 (git+https://github.com/terminal-discord/parking_lot?rev=046a171)",
+ "parking_lot",
  "reqwest",
  "rustls",
  "serde",
@@ -1541,15 +1506,6 @@ name = "slab"
 version = "0.4.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c111b5bd5695e56cffe5129854aa230b39c93a305372fdbb2668ca2394eea9f8"
-
-[[package]]
-name = "smallvec"
-version = "0.6.13"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f7b0758c52e15a8b5e3691eae6cc559f08eee9406e548a4477ba4e67770a82b6"
-dependencies = [
- "maybe-uninit",
-]
 
 [[package]]
 name = "smallvec"
@@ -1732,7 +1688,7 @@ dependencies = [
  "log",
  "mio",
  "num_cpus",
- "parking_lot 0.9.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "parking_lot",
  "slab",
  "tokio-executor",
  "tokio-io",
@@ -2081,7 +2037,7 @@ dependencies = [
  "json",
  "lazy_static",
  "libc",
- "parking_lot 0.9.0 (git+https://github.com/terminal-discord/parking_lot?rev=046a171)",
+ "parking_lot",
  "parsing",
  "regex",
  "serenity",
